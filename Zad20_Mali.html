@@ -1,0 +1,48 @@
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+  function AB_malik() 
+   { 
+ var xa_mal= parseFloat(document.getElementById('xa').value); 
+ var ya_mal= parseFloat(document.getElementById('ya').value);
+ var xb_mal= parseFloat(document.getElementById('xb').value); 
+ var yb_mal= parseFloat(document.getElementById('yb').value);
+ var AB=Math.sqrt(Math.pow(xa-xb,2)+Math.pow(ya-yb,2));
+ document.getElementById("nazwa").innerHTML ="Bok AB= "+AB.toFixed(2)+" cm";  
+   } 
+  function BC_malik() 
+   { 
+ var xb_mal= parseFloat(document.getElementById('xb').value); 
+ var yb_mal= parseFloat(document.getElementById('yb').value);
+ var xc_mal= parseFloat(document.getElementById('xc').value); 
+ var yc_mal= parseFloat(document.getElementById('yc').value); 
+ var AB=Math.sqrt(Math.pow(xb-xc,2)+Math.pow(yb-yc,2));
+ document.getElementById("nazwa").innerHTML ="Bok BC= "+b_mal.toFixed(2)+" cm";  
+   } 
+  function CA_malik() 
+   { 
+ var xc_mal= parseFloat(document.getElementById('xc').value); 
+ var yc_mal= parseFloat(document.getElementById('yc').value); 
+ var xa_mal= parseFloat(document.getElementById('xa').value); 
+ var ya_mal= parseFloat(document.getElementById('ya').value); 
+var AB=Math.sqrt(Math.pow(xc-xa,2)+Math.pow(yc-ya,2));
+ document.getElementById("nazwa").innerHTML ="Bok CA= "+b_mal.toFixed(2)+" cm";  
+   } 
+ </script> 
+  
+  Podaj x punktu A: <input type="text" id="xa" value="podaj punkt"><br>
+  Podaj y punktu A: <input type="text" id="ya" value="podaj punkt"><br><br>
+  Podaj x punktu B: <input type="text" id="xb" value="podaj punkt"><br>
+  Podaj y punktu B: <input type="text" id="yb" value="podaj punkt"><br><br>
+  Podaj x punktu C: <input type="text" id="xc" value="podaj punkt"><br>
+  Podaj y punktu C: <input type="text" id="yc" value="podaj punkt"><br><br> 
+  <input type="button" name="bok" value="Oblicz bok AB" Onclick="AB_malik()"><br> 
+  <input type="button" name="bok" value="Oblicz bok BC" Onclick="BC_malik()"><br> 
+  <input type="button" name="bok" value="Oblicz bok CA" Onclick="CA_malik()"><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html> 
